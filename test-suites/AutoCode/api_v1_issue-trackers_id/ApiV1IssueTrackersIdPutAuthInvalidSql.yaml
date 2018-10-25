@@ -6,7 +6,7 @@ authors:
 - "FX Bot"
 type: "SUITE"
 init: []
-endpoint: "/api/v1/issue-trackers/{id}"
+endpoint: "/api/v1/issue-trackers/{{@Random}}"
 method: "PUT"
 auth: "Invalid_Auth_SQL"
 headers:
@@ -20,6 +20,9 @@ severity: "Major"
 category: "InvalidAuthSQL"
 tags:
 - "V1"
+- "OWASP A1"
+- "[PCI DSS 3.0] 6.5.1"
+- "OTG-AUTHN-004"
 inactive: false
 policies:
   initExec: "Request"
